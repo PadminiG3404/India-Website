@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culture - Incredible India</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background: url('./Images/c.jpg') no-repeat center center fixed;
+            background-size: cover;
+            scroll-behavior: smooth;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            padding: 10px 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+            margin: 0;
+        }
+        .nav-links li {
+            margin: 0 8px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            padding: 8px 12px;
+            transition: 0.3s ease-in-out;
+            background: linear-gradient(to right, #ff9933, white, #138808);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-links a:hover {
+            transform: scale(1.1);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            background: url('./culture/culture-banner.jpg') no-repeat center center/cover;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            text-shadow: 2px 2px 8px black;
+        }
+
+        /* Content Section */
+        .content {
+            width: 85%;
+            margin: 40px auto;
+            text-align: left;
+        }
+
+        .section {
+            display: flex;
+            align-items: center;
+            background: linear-gradient(to right, #ff9933, white, #138808);
+            border-radius: 8px;
+            margin-bottom: 40px;
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+        .section:hover {
+            transform: scale(1.02);
+        }
+        .section img {
+            width: 40%;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+        .text-content {
+            width: 60%;
+            color: black;
+        }
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            background: black;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section p, .section ul {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        .section ul {
+            padding-left: 20px;
+        }
+
+        /* Footer */
+        .footer {
+            background: rgba(0, 0, 0, 0.9);
+            text-align: center;
+            padding: 15px;
+            color: white;
+            font-size: 1rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .section {
+                flex-direction: column;
+                text-align: center;
+            }
+            .section img {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+            .text-content {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#art">Art & Music</a></li>
+            <li><a href="#dance">Dance Forms</a></li>
+            <li><a href="#festivals">Festivals</a></li>
+            <li><a href="#cuisine">Cuisine</a></li>
+            <li><a href="#traditions">Traditions</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Culture of India</h1>
+            <p>Experience the vibrant and diverse cultural heritage of India.</p>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <div class="content">
+
+        <!-- Introduction -->
+        <section class="section">
+            <img src="./Images/c1.webp" alt="Introduction to Indian Culture">
+            <div class="text-content">
+                <h2>Introduction to Indian Culture</h2>
+                <p>India's culture is one of the oldest and most diverse in the world.</p>
+                <ul>
+                    <li>Rich traditions and customs.</li>
+                    <li>Influence of history, spirituality, and regional diversity.</li>
+                    <li>Blend of ancient and modern influences.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Art & Music -->
+        <section class="section">
+            <img src="./Images/c2.webp" alt="Indian Art and Music">
+            <div class="text-content">
+                <h2>Indian Art & Music</h2>
+                <p>India has a deep artistic heritage, from classical paintings to modern expressions.</p>
+                <ul>
+                    <li>Famous art forms: Madhubani, Warli, Tanjore paintings.</li>
+                    <li>Music traditions: Hindustani, Carnatic, folk music.</li>
+                    <li>Rich legacy of instruments like sitar, tabla, and veena.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Dance Forms -->
+        <section class="section">
+            <img src="./Images/c3.webp" alt="Classical and Folk Dances">
+            <div class="text-content">
+                <h2>Classical & Folk Dance Forms</h2>
+                <p>India is known for its expressive dance traditions.</p>
+                <ul>
+                    <li>Classical dances: Bharatanatyam, Kathak, Kuchipudi, Odissi.</li>
+                    <li>Folk dances: Bhangra, Garba, Lavani, Yakshagana.</li>
+                    <li>Dance as a storytelling medium.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Festivals -->
+        <section class="section">
+            <img src="./Images/c4.webp" alt="Indian Festivals">
+            <div class="text-content">
+                <h2>Festivals of India</h2>
+                <p>Festivals are an integral part of Indian culture.</p>
+                <ul>
+                    <li>Diwali - Festival of Lights.</li>
+                    <li>Holi - Festival of Colors.</li>
+                    <li>Eid, Christmas, Navratri, Pongal, Bihu, Onam.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Cuisine -->
+        <section class="section">
+            <img src="./Images/c5.webp" alt="Indian Cuisine">
+            <div class="text-content">
+                <h2>Indian Cuisine</h2>
+                <p>India is famous for its diverse and flavorful cuisine.</p>
+                <ul>
+                    <li>Spices, curries, and regional delicacies.</li>
+                    <li>Famous dishes: Biryani, Dosa, Paneer, Chole Bhature.</li>
+                    <li>Street food culture.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Traditions & Customs -->
+        <section class="section">
+            <img src="./Images/c6.webp" alt="Indian Traditions">
+            <div class="text-content">
+                <h2>Traditions & Customs</h2>
+                <p>India's traditions are deeply rooted in its cultural values.</p>
+                <ul>
+                    <li>Namaste - Greeting with respect.</li>
+                    <li>Yoga and spirituality.</li>
+                    <li>Weddings, rituals, and family values.</li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
+<!--         </section>
+        
+        <!-- Footer -->
+        <div class="footer">
+            &copy; 2021 Incredible India. All rights reserved.
+        </div>
+
+    </div>

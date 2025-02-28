@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodiversity - Incredible India</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background: url('./Images/b.jpg') no-repeat center center fixed;
+            background-size: cover;
+            scroll-behavior: smooth;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            padding: 10px 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+            margin: 0;
+        }
+        .nav-links li {
+            margin: 0 8px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            padding: 8px 12px;
+            transition: 0.3s ease-in-out;
+            background: linear-gradient(to right, #ff9933, white, #138808);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-links a:hover {
+            transform: scale(1.1);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            background: url('./biodiversity/biodiversity-banner.jpg') no-repeat center center/cover;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            text-shadow: 2px 2px 8px black;
+        }
+
+        /* Content Section */
+        .content {
+            width: 85%;
+            margin: 40px auto;
+            text-align: left;
+        }
+
+        .section {
+            display: flex;
+            align-items: center;
+            background: linear-gradient(to right, #ff9933, white, #138808);
+            border-radius: 8px;
+            margin-bottom: 40px;
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+        .section:hover {
+            transform: scale(1.02);
+        }
+        .section img {
+            width: 40%;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+        .text-content {
+            width: 60%;
+            color: black;
+        }
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            background: black;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section p, .section ul {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        .section ul {
+            padding-left: 20px;
+        }
+
+        /* Footer */
+        .footer {
+            background: rgba(0, 0, 0, 0.9);
+            text-align: center;
+            padding: 15px;
+            color: white;
+            font-size: 1rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .section {
+                flex-direction: column;
+                text-align: center;
+            }
+            .section img {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+            .text-content {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#Intro">Introduction</a></li>
+            <li><a href="#wildlife">Wildlife</a></li>
+            <li><a href="#forests">Forests & Flora</a></li>
+            <li><a href="#conservation">Conservation Efforts</a></li>
+            <li><a href="#ecosystems">Ecosystems</a></li>
+            <li><a href="#protectedareas">Protected Areas</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Biodiversity of India</h1>
+            <p>Discover the rich wildlife, forests, and ecosystems of India.</p>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <div class="content">
+
+        <!-- Introduction -->
+        <section class="section">
+            <img src="./Images/b1.webp" alt="Biodiversity Overview">
+            <div class="text-content">
+                <h2>Introduction to India's Biodiversity</h2>
+                <p>India is one of the 17 megadiverse countries, home to diverse ecosystems.</p>
+                <ul>
+                    <li>Hosts about 8% of the world's biodiversity.</li>
+                    <li>Has over 90,000 species of animals and 47,000 species of plants.</li>
+                    <li>Varied habitats from rainforests to deserts.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Wildlife -->
+        <section class="section">
+            <img src="./Images/b2.webp" alt="Indian Wildlife">
+            <div class="text-content">
+                <h2>Wildlife of India</h2>
+                <p>India is home to some of the most iconic species on the planet.</p>
+                <ul>
+                    <li><b>Royal Bengal Tiger</b> - Found in national parks like Sundarbans & Ranthambore.</li>
+                    <li><b>Asiatic Elephant</b> - Roams in southern and northeastern forests.</li>
+                    <li><b>One-Horned Rhinoceros</b> - Found in Kaziranga National Park.</li>
+                    <li><b>Snow Leopard</b> - Inhabits the Himalayan regions.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Forests & Flora -->
+        <section class="section">
+            <img src="./Images/b3.webp" alt="Forests of India">
+            <div class="text-content">
+                <h2>Forests & Flora</h2>
+                <p>India has a wide variety of forest types, supporting rare plant species.</p>
+                <ul>
+                    <li><b>Western Ghats</b> - Home to rainforests with rich plant diversity.</li>
+                    <li><b>Sundarbans</b> - Largest mangrove forest.</li>
+                    <li><b>Deodar & Oak Forests</b> - Found in the Himalayas.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Conservation Efforts -->
+        <section class="section">
+            <img src="./Images/b4.webp" alt="Conservation Efforts">
+            <div class="text-content">
+                <h2>Conservation Efforts</h2>
+                <p>India has made efforts to protect its unique wildlife.</p>
+                <ul>
+                    <li><b>Project Tiger</b> - Started in 1973 to save tigers.</li>
+                    <li><b>Project Elephant</b> - Focuses on elephant conservation.</li>
+                    <li><b>Wildlife Protection Act (1972)</b> - A law for the protection of species.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Protected Areas -->
+        <section class="section">
+            <img src="./Images/b5.webp" alt="National Parks">
+            <div class="text-content">
+                <h2>Protected Areas</h2>
+                <p>India has over 100 national parks and 500 wildlife sanctuaries.</p>
+                <ul>
+                    <li><b>Kaziranga National Park</b> - Home to the one-horned rhinoceros.</li>
+                    <li><b>Jim Corbett National Park</b> - India's first national park.</li>
+                    <li><b>Sundarbans</b> - UNESCO World Heritage Site.</li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>

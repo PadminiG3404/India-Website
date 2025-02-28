@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politics - Incredible India</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background: url('./politics/politics-bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            scroll-behavior: smooth;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            padding: 10px 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+            margin: 0;
+        }
+        .nav-links li {
+            margin: 0 8px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            padding: 8px 12px;
+            transition: 0.3s ease-in-out;
+            background: linear-gradient(to right, #ff9933, white, #138808);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-links a:hover {
+            transform: scale(1.1);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            background: url('./Images/p.jpg') no-repeat center center/cover;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            text-shadow: 2px 2px 8px black;
+        }
+
+        /* Content Section */
+        .content {
+            width: 85%;
+            margin: 40px auto;
+            text-align: left;
+        }
+
+        .section {
+            display: flex;
+            align-items: center;
+            background: linear-gradient(to right, #ff9933, white, #138808);
+            border-radius: 8px;
+            margin-bottom: 40px;
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+        .section:hover {
+            transform: scale(1.02);
+        }
+        .section img {
+            width: 40%;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+        .text-content {
+            width: 60%;
+            color: black;
+        }
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            background: black;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section p, .section ul {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        .section ul {
+            padding-left: 20px;
+        }
+
+        /* Footer */
+        .footer {
+            background: rgba(0, 0, 0, 0.9);
+            text-align: center;
+            padding: 15px;
+            color: white;
+            font-size: 1rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .section {
+                flex-direction: column;
+                text-align: center;
+            }
+            .section img {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+            .text-content {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#govtstructure">Government Structure</a></li>
+            <li><a href="#constitution">Constitution</a></li>
+            <li><a href="#politicalparties">Political Parties</a></li>
+            <li><a href="#elections">Elections</a></li>
+            <li><a href="#policies">Policies</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Politics of India</h1>
+            <p>Explore the democratic framework and governance of India.</p>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <div class="content">
+
+        <!-- Introduction -->
+        <section class="section">
+            <img src="./Images/p1.webp" alt="Introduction to Indian Politics">
+            <div class="text-content">
+                <h2>Introduction to Indian Politics</h2>
+                <p>India is the world's largest democracy with a federal parliamentary system.</p>
+                <ul>
+                    <li>Gained independence in 1947.</li>
+                    <li>Follows a multi-party system.</li>
+                    <li>Guided by the Constitution of India.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Government Structure -->
+        <section class="section">
+            <img src="./Images/p2.webp" alt="Government Structure">
+            <div class="text-content">
+                <h2>Government Structure</h2>
+                <p>India has a three-tier governance system.</p>
+                <ul>
+                    <li><b>Legislative</b> - Makes laws (Parliament, State Assemblies).</li>
+                    <li><b>Executive</b> - Implements laws (President, Prime Minister, Cabinet).</li>
+                    <li><b>Judiciary</b> - Interprets laws (Supreme Court, High Courts).</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Constitution -->
+        <section class="section">
+            <img src="./Images/p3.webp" alt="Constitution of India">
+            <div class="text-content">
+                <h2>Constitution of India</h2>
+                <p>Adopted on 26th January 1950, the Constitution is the supreme law of India.</p>
+                <ul>
+                    <li>Longest written constitution in the world.</li>
+                    <li>Defines the fundamental rights and duties of citizens.</li>
+                    <li>Guides the governance structure and political framework.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Political Parties -->
+        <section class="section">
+            <img src="./Images/p4.webp" alt="Political Parties">
+            <div class="text-content">
+                <h2>Political Parties</h2>
+                <p>India has a diverse political landscape with national and regional parties.</p>
+                <ul>
+                    <li><b>Major National Parties</b>: BJP, INC, AAP, CPI(M), etc.</li>
+                    <li><b>Regional Parties</b>: TMC, DMK, SP, Shiv Sena, etc.</li>
+                    <li>Election Commission regulates political parties.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Elections -->
+        <section class="section">
+            <img src="./Images/p5.webp" alt="Elections in India">
+            <div class="text-content">
+                <h2>Elections in India</h2>
+                <p>India follows a free and fair electoral process.</p>
+                <ul>
+                    <li>General Elections held every 5 years.</li>
+                    <li>State elections determine Chief Ministers.</li>
+                    <li>Election Commission ensures transparency.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Policies -->
+        <section class="section">
+            <img src="./Images/p6.webp" alt="Government Policies">
+            <div class="text-content">
+                <h2>Government Policies</h2>
+                <p>Key policies that shape India’s development.</p>
+                <ul>
+                    <li><b>GST</b> - Simplified tax system.</li>
+                    <li><b>Make in India</b> - Boosts manufacturing.</li>
+                    <li><b>Digital India</b> - Encourages digital transformation.</li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>

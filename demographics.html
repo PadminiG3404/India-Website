@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demographics - Incredible India</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background: url('./Images/d.webp') no-repeat center center fixed;
+            background-size: cover;
+            scroll-behavior: smooth;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            padding: 10px 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+            margin: 0;
+        }
+        .nav-links li {
+            margin: 0 8px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            padding: 8px 12px;
+            transition: 0.3s ease-in-out;
+            background: linear-gradient(to right, #ff9933, white, #138808);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-links a:hover {
+            transform: scale(1.1);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            background: url('./demographics/demographics-banner.jpg') no-repeat center center/cover;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            text-shadow: 2px 2px 8px black;
+        }
+
+        /* Content Section */
+        .content {
+            width: 85%;
+            margin: 40px auto;
+            text-align: left;
+        }
+
+        .section {
+            display: flex;
+            align-items: center;
+            background: linear-gradient(to right, #ff9933, white, #138808);
+            border-radius: 8px;
+            margin-bottom: 40px;
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+        .section:hover {
+            transform: scale(1.02);
+        }
+        .section img {
+            width: 40%;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+        .text-content {
+            width: 60%;
+            color: black;
+        }
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            background: black;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section p, .section ul {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        .section ul {
+            padding-left: 20px;
+        }
+
+        /* Footer */
+        .footer {
+            background: rgba(0, 0, 0, 0.9);
+            text-align: center;
+            padding: 15px;
+            color: white;
+            font-size: 1rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .section {
+                flex-direction: column;
+                text-align: center;
+            }
+            .section img {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+            .text-content {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#population">Population</a></li>
+            <li><a href="#languages">Languages</a></li>
+            <li><a href="#religions">Religions</a></li>
+            <li><a href="#urbanization">Urbanization</a></li>
+            <li><a href="#future">Future Trends</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Demographics of India</h1>
+            <p>Discover India's diverse population and cultural landscape.</p>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <div class="content">
+
+        <!-- Introduction -->
+        <section class="section">
+            <img src="./Images/d1.webp" alt="Introduction to Indian Demographics">
+            <div class="text-content">
+                <h2>Introduction to Indian Demographics</h2>
+                <p>India is the second-most populous country in the world.</p>
+                <ul>
+                    <li>Population exceeds 1.4 billion.</li>
+                    <li>Rich diversity in ethnicity, culture, and traditions.</li>
+                    <li>Vast linguistic and religious diversity.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Population -->
+        <section class="section">
+            <img src="./Images/d2.webp" alt="India's Population">
+            <div class="text-content">
+                <h2>Population Overview</h2>
+                <p>India has a rapidly growing and young population.</p>
+                <ul>
+                    <li>Median age is around 28 years.</li>
+                    <li>Highly dense urban centers.</li>
+                    <li>Growing middle class and workforce.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Languages -->
+        <section class="section">
+            <img src="./Images/d3.webp" alt="Languages of India">
+            <div class="text-content">
+                <h2>Languages of India</h2>
+                <p>India is a multilingual country with hundreds of spoken languages.</p>
+                <ul>
+                    <li>22 official languages recognized by the constitution.</li>
+                    <li>Hindi is the most spoken language.</li>
+                    <li>English is widely used in business and education.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Religions -->
+        <section class="section">
+            <img src="./Images/d4.webp" alt="Religious Diversity">
+            <div class="text-content">
+                <h2>Religious Diversity</h2>
+                <p>India is home to multiple religions and spiritual traditions.</p>
+                <ul>
+                    <li>Hinduism (80%), Islam (14%), Christianity, Sikhism, Buddhism, Jainism.</li>
+                    <li>Religious harmony and cultural festivals.</li>
+                    <li>Secularism enshrined in the constitution.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Urbanization -->
+        <section class="section">
+            <img src="./Images/d5.webp" alt="Urbanization in India">
+            <div class="text-content">
+                <h2>Urbanization & Migration</h2>
+                <p>India is experiencing rapid urbanization.</p>
+                <ul>
+                    <li>Major urban centers: Mumbai, Delhi, Bangalore, Kolkata.</li>
+                    <li>Rural-to-urban migration increasing.</li>
+                    <li>Smart cities and infrastructure development.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Future Trends -->
+        <section class="section">
+            <img src="./Images/d6.webp" alt="Future Trends">
+            <div class="text-content">
+                <h2>Future Demographic Trends</h2>
+                <p>India's population is projected to keep evolving.</p>
+                <ul>
+                    <li>Expected to overtake China as the most populous country.</li>
+                    <li>Increasing urbanization and economic development.</li>
+                    <li>Rising influence of youth and technology.</li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
