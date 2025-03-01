@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incredible India</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        .hero {
+            position: relative;
+            background: url('./Images/bg.webp') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            background-attachment: fixed;
+        }
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+        .hero p {
+            font-size: 1.2rem;
+        }
+        .btn {
+            background: orange;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .section {
+            position: relative;
+            text-align: center;
+            margin: 40px auto;
+            width: 80%;
+            height: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        .section img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        .section-content {
+            position: relative;
+            z-index: 1;
+            padding: 80px;
+        }
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .section p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.9);
+            padding: 10px 10px;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap; /* Prevents navbar cutoff */
+            padding: 0;
+            margin: 0;
+        }
+        .nav-links li {
+            margin: 0 8px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            padding: 8px 12px;
+            transition: 0.3s ease-in-out;
+            background: linear-gradient(to right, #ff9933, white, #138808); /* Indian Tricolor */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-links a:hover {
+            transform: scale(1.1);
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Incredible India</div>
+        <ul class="nav-links">
+            <li><a href="#mythology">Mythology</a></li>
+            <li><a href="#history">History</a></li>
+            <li><a href="#geography">Geography</a></li>
+            <li><a href="#biodiversity">Biodiversity</a></li>
+            <li><a href="#politics">Politics & Government</a></li>
+            <li><a href="#economy">Economy</a></li>
+            <li><a href="#demographics">Demographics</a></li>
+            <li><a href="#culture">Culture</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Incredible India</h1>
+            <p>Experience the land of diversity, culture, and heritage.</p>
+            <a href="#explore" class="btn">Explore Now</a>
+        </div>
+    </section>
+
+    <div class="sections-container">
+        <section id="mythology" class="section" onclick="location.href='mythology.html';" style="cursor: pointer;">
+            <img src="./Images/mythology img1.jpg" alt="Mythology">
+            <div class="section-content">
+                <h2>Mythology</h2>
+                <p>Explore India's vast mythological history with epic tales from Ramayana and Mahabharata.</p>
+            </div>
+        </section>
+    
+        <section id="history" class="section" onclick="location.href='history.html';" style="cursor: pointer;">
+            <img src="./Images/history img1.png" alt="History">
+            <div class="section-content">
+                <h2>India's Rich History</h2>
+                <p>India has a history that dates back thousands of years, filled with remarkable civilizations, rulers, and cultural transformations.</p>
+            </div>
+        </section>
+
+        <section id="geography" class="section" onclick="location.href='geography.html';" style="cursor: pointer;">
+            <img src="./Images/g.jpg" alt="Geography">
+            <div class="section-content">
+                <h2>Geography</h2>
+                <p>From the mighty Himalayas to the vast coastline, India’s geography is diverse and breathtaking.</p>
+            </div>
+        </section>
+
+        <section id="biodiversity" class="section" onclick="location.href='biodiversity.html';" style="cursor: pointer;">
+            <img src="./Images/b.jpg" alt="Biodiversity">
+            <div class="section-content">
+                <h2>Biodiversity</h2>
+                <p>India is home to a wide variety of flora and fauna, with numerous national parks and wildlife sanctuaries.</p>
+            </div>
+        </section>
+        
+        <section id="politics" class="section" onclick="location.href='politics.html';" style="cursor: pointer;">
+            <img src="./Images/politics img2.webp" alt="Politics & Government">
+            <div class="section-content">
+                <h2>Politics & Government</h2>
+                <p>India, the world's largest democracy, has a complex political structure with a rich history of governance.</p>
+            </div>
+        </section>
+
+        <section id="economy" class="section" onclick="location.href='economy.html';" style="cursor: pointer;">
+            <img src="./Images/economy img2.webp" alt="Economy">
+            <div class="section-content">
+                <h2>Economy</h2>
+                <p>India has a rapidly growing economy, with diverse industries ranging from agriculture to technology.</p>
+            </div>
+        </section>
+
+        <section id="demographics" class="section" onclick="location.href='demographics.html';" style="cursor: pointer;">
+            <img src="./Images/demo img2.jpg" alt="Demographics">
+            <div class="section-content">
+                <h2>Demographics</h2>
+                <p>With over a billion people, India is a diverse nation with multiple languages, religions, and cultures.</p>
+            </div>
+        </section>
+
+        <section id="culture" class="section" onclick="location.href='culture.html';" style="cursor: pointer;">
+            <img src="./Images/c.jpg" alt="Culture">
+            <div class="section-content">
+                <h2>Culture</h2>
+                <p>India's culture is a blend of traditions, music, dance, festivals, and cuisine that varies by region.</p>
+            </div>
+        </section>
+    </div>    
+
+</body>
+</html>
